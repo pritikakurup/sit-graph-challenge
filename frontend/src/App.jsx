@@ -17,7 +17,7 @@ function App() {
         .filter(Boolean);
 
       const response = await axios.post(
-        "http://localhost:5001/api/graph",
+        "https://sit-graph-challenge.onrender.com/api/graph",
         {
           edges: edgeArray,
         }
