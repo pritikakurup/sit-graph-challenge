@@ -21,6 +21,12 @@ app.post("/api/graph", (req, res) => {
         });
     }
 });
+app.get("/", (req, res) => {
+  res.json({
+    status: "Backend Running",
+    api: "/api/graph"
+  });
+});
 
 app.listen(5001, () => {
     console.log("Server running on port 5001");
